@@ -23,13 +23,13 @@ const translations = {
     // Hero Section
     'hero.badge': '디지털 헬스케어 전문가',
     'hero.title': '디지털 헬스케어의 미래를 구현하는 기술 리더',
-    'hero.subtitle': 'AI 기반 헬스케어 시스템부터 체내 이식형 SoC까지, 혁신을 이끄는 전문가입니다.',
+    'hero.subtitle': 'AI 기반 헬스케어 시스템부터 체내 이식형 SoC까지, 혁신을 이끄는 전문가',
     'hero.cta.portfolio': '전체 포트폴리오 보기',
     'hero.cta.cv': 'CV 다운로드',
     
     // Expertise Section
     'expertise.title': '핵심 역량 및 전문성',
-    'expertise.subtitle': '디지털 헬스케어와 의료기기 분야에서 축적한 다양한 경험과 전문성을 바탕으로 혁신적인 솔루션을 제공합니다.',
+    'expertise.subtitle': 'AI 기반 헬스케어 시스템부터 체내 이식형 SoC까지, 혁신을 향한 여정',
     'expertise.healthcare.title': '디지털 헬스케어 기술 리더십',
     'expertise.healthcare.desc': 'AI 기반 헬스케어 솔루션과 의료기기 개발을 통한 혁신적 서비스 창출',
     'expertise.soc.title': '체내 이식형 의료기기 SoC',

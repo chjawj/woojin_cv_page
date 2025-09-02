@@ -108,19 +108,19 @@ export function ExpertiseSection() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             <div className="text-center">
               <div className="text-3xl md:text-4xl font-bold text-blue-600 mb-2">10+</div>
-              <div className="text-gray-600">년간 경력</div>
+              <div className="text-gray-600">Years of Experience</div>
             </div>
             <div className="text-center">
-              <div className="text-3xl md:text-4xl font-bold text-green-600 mb-2">15+</div>
-              <div className="text-gray-600">프로젝트 완료</div>
+              <div className="text-3xl md:text-4xl font-bold text-green-600 mb-2">13+</div>
+              <div className="text-gray-600">Projects Completed</div>
             </div>
             <div className="text-center">
-              <div className="text-3xl md:text-4xl font-bold text-purple-600 mb-2">8+</div>
-              <div className="text-gray-600">논문 발표</div>
+              <div className="text-3xl md:text-4xl font-bold text-purple-600 mb-2">7+</div>
+              <div className="text-gray-600">Papers Published</div>
             </div>
             <div className="text-center">
-              <div className="text-3xl md:text-4xl font-bold text-orange-600 mb-2">5+</div>
-              <div className="text-gray-600">특허 보유</div>
+              <div className="text-3xl md:text-4xl font-bold text-orange-600 mb-2">15+</div>
+              <div className="text-gray-600">Patents Held</div>
             </div>
           </div>
         </motion.div>

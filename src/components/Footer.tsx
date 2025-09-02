@@ -4,17 +4,12 @@ import { Heart, ArrowUp, Linkedin, Github, Mail } from 'lucide-react';
 const socialLinks = [
   {
     name: 'LinkedIn',
-    href: 'https://linkedin.com/in/woojin-ahn',
+    href: 'https://www.linkedin.com/in/woojin-ahn-20a020b2/',
     icon: Linkedin
   },
   {
-    name: 'GitHub',
-    href: 'https://github.com/woojin-ahn',
-    icon: Github
-  },
-  {
     name: 'Email',
-    href: 'mailto:woojin.ahn@example.com',
+    href: 'mailto:woojinahn7@gmail.com',
     icon: Mail
   }
 ];
@@ -41,7 +36,7 @@ export function Footer() {
                 디지털 헬스케어의 미래를 구현하는 기술 리더
               </p>
               <p className="text-gray-400 text-sm mt-2">
-                혁신적인 의료기술로 더 나은 세상을 만들어가고 있습니다.
+                혁신 기술로 더 나은 세상을 만들어가고 있습니다.
               </p>
             </motion.div>
           </div>
@@ -108,8 +103,8 @@ export function Footer() {
               </div>
               
               <div className="text-sm text-gray-400">
-                <p className="mb-1">woojin.ahn@example.com</p>
-                <p>서울특별시 강남구</p>
+                <p className="mb-1">woojinahn7@gmail.com</p>
+                <p>Seoul Korea</p>
               </div>
             </motion.div>
           </div>

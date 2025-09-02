@@ -6,7 +6,7 @@ const projects = [
   {
     title: '덱슐린',
     category: '디지털 치료제',
-    description: '비만 환자를 위한 AI 기술 기반 디지털 치료 솔루션. 연속혈당측정기(CGM)와 사용자 입력 데이터를 기반으로 운동, 약물, 식이 중재를 통합 제공하며, 실시간 모니터링 및 맞춤형 피드백 기능을 지원.',
+    description: '비만 환자용 AI 기반 디지털 치료 솔루션.CGM 데이터와 사용자 입력을 활용해 운동·약물·식이 중재를 통합 제공, 실시간 모니터링 및 맞춤형 피드백 지원.',
     tech: ['Computer Vision', 'Android', 'IoT', 'Python'],
     role: 'CTO & 기술 총괄',
     timeline: '2024 - 현재',

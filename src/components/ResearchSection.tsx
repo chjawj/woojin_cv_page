@@ -37,54 +37,52 @@ const getEducation = (language: 'ko' | 'en') => [
 
 const publications = [
   {
-    title: 'Ultra-Low Power Neural Signal Processing SoC for Implantable Brain-Computer Interfaces',
-    authors: ['W. Ahn', 'S. Kim', 'J. Lee', 'H. Park'],
-    venue: 'IEEE International Solid-State Circuits Conference (ISSCC)',
+    title: 'An Energy-Efficient Stimulation System Based on Adaptive Dynamic Voltage Switching Control for Cochlear Implants',
+    authors: ['W. Ahn, K.-H. Nguyen, H. Lee, K. S. Min, S. Ha and M. Je'],
+    venue: 'IEEE Transactions on Biomedical Circuits and Systems (TBCAS)',
+    year: '2025',
+    type: 'Journal',
+    citations: 1,
+    impact: 'Impact Factor: 5.4',
+    link: 'https://ieeexplore.ieee.org/document/10752368'
+  },
+  {
+    title: 'An Energy-Efficient, Scalable Neural Stimulation IC with Adaptive Dynamic Voltage Switching for Cochlear Implant System',
+    authors: ['W. Ahn et al.'],
+    venue: 'IEEE International Symposium on Circuits and Systems (ISCAS)',
+    year: '2023',
+    type: 'Conference',
+    citations: 3,
+    impact: 'Impact Factor: 1.2',
+    link: 'https://ieeexplore.ieee.org/document/10181719'
+  },
+  {
+    title: 'A Reconfigurable Neural Stimulation IC With a High-Resolution Strength Control and In-Situ Neural Recording Function for Cochlear Implant Systems',
+    authors: ['W. Ahn et al.'],
+    venue: 'IEEE Solid-State Circuits Letters',
+    year: '2022',
+    type: 'Journal',
+    citations: 14,
+    impact: 'Impact Factor: 2.0',
+    link: 'https://ieeexplore.ieee.org/document/9782685'
+  },
+  {
+    title: 'A Neural Stimulation IC Based on a Reconfigurable Current DAC with In-Situ Neural Recording Function for Cochlear Implant Systems',
+    authors: ['W. Ahn et al.'],
+    venue: '2021 IEEE Asian Solid-State Circuits Conference (A-SSCC)',
     year: '2021',
     type: 'Conference',
-    citations: 45,
-    impact: 'Top-tier conference in semiconductor design',
+    citations: 3,
     link: '#'
   },
   {
-    title: 'Wireless Power Transfer System for Biomedical Implants: Design and Safety Considerations',
-    authors: ['W. Ahn', 'M. Jung', 'K. Cho'],
-    venue: 'IEEE Transactions on Biomedical Engineering',
-    year: '2020',
-    type: 'Journal',
-    citations: 73,
-    impact: 'Impact Factor: 4.3',
-    link: '#'
-  },
-  {
-    title: 'AI-Driven Digital Therapeutics Platform for Personalized Mental Health Care',
-    authors: ['W. Ahn', 'Y. Son', 'D. Kim', 'J. Park', 'S. Lee'],
-    venue: 'Nature Digital Medicine',
-    year: '2023',
-    type: 'Journal',
-    citations: 28,
-    impact: 'Impact Factor: 12.8',
-    link: '#'
-  },
-  {
-    title: 'Real-time EEG Signal Analysis Using Machine Learning for Seizure Detection',
-    authors: ['W. Ahn', 'H. Kim', 'J. Yoon'],
-    venue: 'IEEE Transactions on Neural Systems and Rehabilitation Engineering',
-    year: '2019',
-    type: 'Journal',
-    citations: 89,
-    impact: 'Impact Factor: 4.8',
-    link: '#'
-  },
-  {
-    title: 'Energy-Efficient Memory Architecture for IoT Healthcare Devices',
-    authors: ['W. Ahn', 'C. Park', 'S. Choi'],
-    venue: 'ACM/IEEE Design Automation Conference (DAC)',
-    year: '2018',
+    title: 'Design of coupled resonators for wireless power transfer to mobile devices using magnetic field shaping." Electromagnetic Compatibility (EMC)',
+    authors: ['W. Ahn et al.'],
+    venue: 'IEEE International Symposium on Electromagnetic Compatibility, EMC',
+    year: '2012',
     type: 'Conference',
-    citations: 56,
-    impact: 'Premier conference in electronic design automation',
-    link: '#'
+    citations: 19,
+    link: 'https://scholarsmine.mst.edu/ele_comeng_facwork/4224/'
   }
 ];
 

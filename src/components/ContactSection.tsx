@@ -1,3 +1,4 @@
+import React from 'react';
 import { motion } from 'motion/react';
 import { Mail, Linkedin, Github, MapPin, Phone, Calendar, Send, MessageSquare } from 'lucide-react';
 import { Button } from './ui/button';
@@ -6,32 +7,24 @@ const contactMethods = [
   {
     icon: Mail,
     label: '이메일',
-    value: 'woojin.ahn@example.com',
-    href: 'mailto:woojin.ahn@example.com',
+    value: 'woojinahn7@gmail.com',
+    href: 'mailto:woojinahn7@gmail.com',
     description: '프로젝트 문의 및 협업 제안',
     color: 'from-blue-500 to-cyan-500'
   },
   {
     icon: Linkedin,
     label: 'LinkedIn',
-    value: 'linkedin.com/in/woojin-ahn',
-    href: 'https://linkedin.com/in/woojin-ahn',
+    value: 'linkedin.com/in/woojin-ahn-20a020b2',
+    href: 'https://www.linkedin.com/in/woojin-ahn-20a020b2/',
     description: '전문적인 네트워킹',
     color: 'from-blue-600 to-blue-800'
   },
   {
-    icon: Github,
-    label: 'GitHub',
-    value: 'github.com/woojin-ahn',
-    href: 'https://github.com/woojin-ahn',
-    description: '오픈소스 프로젝트',
-    color: 'from-gray-600 to-gray-800'
-  },
-  {
     icon: Phone,
     label: '전화',
-    value: '+82-10-1234-5678',
-    href: 'tel:+82-10-1234-5678',
+    value: '+82-10-8934-4176',
+    href: 'tel:+82-10-8934-4176',
     description: '긴급 연락용',
     color: 'from-green-500 to-emerald-500'
   }
@@ -133,7 +126,7 @@ export function ContactSection() {
                 <MapPin className="h-6 w-6 text-blue-600" />
                 <h4 className="font-semibold text-gray-900">위치</h4>
               </div>
-              <p className="text-gray-600 mb-2">서울특별시 강남구</p>
+              <p className="text-gray-600 mb-2">서울특별시</p>
               <p className="text-gray-500 text-sm">
                 대면 미팅, 온라인 회의 모두 가능합니다.
                 일정 조율을 위해 미리 연락 부탁드립니다.
@@ -184,11 +177,14 @@ export function ContactSection() {
               
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button
+                  asChild
                   size="lg"
                   className="bg-white text-blue-600 hover:bg-gray-100 flex items-center gap-2 font-semibold"
                 >
-                  <Mail className="h-5 w-5" />
-                  이메일 보내기
+                  <a href="mailto:woojinahn7@gmail.com">
+                    <Mail className="h-5 w-5" />
+                    이메일 보내기
+                  </a>
                 </Button>
                 
                 <Button

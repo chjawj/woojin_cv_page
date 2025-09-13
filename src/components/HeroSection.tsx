@@ -71,7 +71,7 @@ export function HeroSection() {
               variant="outline"
               size="lg"
               className="border-2 border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white px-10 py-4 rounded-lg transition-all duration-300 text-lg"
-              onClick={() => window.open('https://drive.google.com/file/d/1379jMKMtGqOfy6_VcTDs0ieowgzSsJNd/view?usp=sharing', '_blank')}
+              onClick={() => window.open('https://drive.google.com/file/d/174i7phAwZSJMZNEKcIeKzoQUzYRVrkm4/view?usp=sharing', '_blank')}
             >
               <Download className="mr-3 h-6 w-6" />
               {t('hero.cta.cv')}

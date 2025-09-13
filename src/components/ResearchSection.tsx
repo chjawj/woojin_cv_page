@@ -1,3 +1,4 @@
+import React from 'react';
 import { motion } from 'motion/react';
 import { BookOpen, FileText, Award, ExternalLink, Calendar, Users, Globe } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
@@ -88,44 +89,44 @@ const publications = [
 
 const patents = [
   {
-    title: '체내 이식형 의료기기용 무선 전력 전송 시스템',
-    number: 'KR 10-2021-0045678',
+    title: '미주신경자극 기능을 구비하는 무선 이어폰',
+    number: 'KR 10-2021-0140996',
     status: '등록',
-    year: '2021',
-    inventors: ['안우진', '김성호', '이준혁'],
-    description: '생체 안전성을 고려한 고효율 무선 전력 전송 기술'
+    year: '2023',
+    inventors: ['안우진', '박대관', '윤민수','민규식','이호승'],
+    description: '미주신경자극 기능을 갖춘 무선 이어폰은 귓구멍에 삽입되는 이어폰부, 귓바퀴 안쪽에 접촉되는 전극부, 그리고 신경자극의 초기 설정·조절·피드백을 제어하는 컨트롤러를 포함함'
   },
   {
-    title: '인공지능 기반 뇌파 신호 분석 및 질환 예측 시스템',
-    number: 'KR 10-2022-0123456',
+    title: '인공와우 시스템을 위한 신경 자극기',
+    number: 'KR 10-2022-0170788',
     status: '등록',
-    year: '2022',
-    inventors: ['안우진', '박지영', '최민수'],
-    description: '딥러닝을 활용한 실시간 뇌파 신호 분석 및 신경계 질환 조기 진단'
+    year: '2025',
+    inventors: ['안우진', '제민규', '민규식','이호승'],
+    description: '인공와우 시스템에서 기준 전류, 오프셋 전류, 증분 전류를 제어하는 회로를 통해 글리치 노이즈를 최소화하고 보다 정확한 신경 자극 신호를 제공하는 신경 자극기'
   },
   {
-    title: '개인화된 디지털 치료제 플랫폼 및 운영 방법',
-    number: 'KR 10-2023-0087654',
+    title: '인공와우 시스템을 위한 적응형 동적 신경자극전압 스위칭 방법',
+    number: 'KR 10-2023-0112076',
     status: '출원',
     year: '2023',
-    inventors: ['안우진', '손영호', '김도현'],
-    description: 'AI 기반 개인맞춤형 디지털 치료제 생성 및 모니터링 시스템'
+    inventors: ['안우진', '제민규', '민규식','이호승'],
+    description: '인공와우 시스템을 위한 적응형 동적 신경자극전압 스위칭 방법'
   },
   {
-    title: '저전력 생체신호 처리용 시스템온칩',
-    number: 'US 11,234,567',
+    title: '외장 마이크를 위한 인공 와우 외부기',
+    number: 'KR 10-2020-0104043',
     status: '등록',
-    year: '2020',
-    inventors: ['W. Ahn', 'S. Kim', 'J. Lee'],
-    description: '극저전력으로 동작하는 생체신호 수집 및 처리 전용 칩셋'
+    year: '2023',
+    inventors: ['민규식','이호승','안우진','이승훈','박종혁','임정우','김은수',],
+    description: '사용자 옆머리에 부착되는 인공와우 외부기에 외장 마이크를 연결하여, 내장 마이크 및 외장 마이크로 수집한 소리를 제어장치에서 처리해 인공와우 이식기로 전달하는 장치'
   },
   {
-    title: '웨어러블 헬스케어 디바이스의 데이터 보안 시스템',
-    number: 'KR 10-2020-0098765',
+    title: '신경 보철용 다채널 전류 자극기',
+    number: 'KR 10-2017-0136076',
     status: '등록',
-    year: '2020',
-    inventors: ['안우진', '정민규', '조경호'],
-    description: '헬스케어 데이터의 안전한 수집, 전송 및 저장을 위한 보안 기술'
+    year: '2019',
+    inventors: ['박정환', '이호승', '안우진'],
+    description: '신경 보철용 다채널 전류 자극기에 관한 것으로, 채널별 자극 순서에 따라 직류전류를 스위칭해 이상 전류 펄스를 발생시키되 DAC 스위칭 노이즈를 최소화하여 채널 간 인터벌을 줄이고 동일 시간에 더 많은 채널을 CIS 방식으로 자극할 수 있도록 한 것'
   }
 ];
 
@@ -215,7 +216,20 @@ export function ResearchSection() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
-                className="bg-white border border-gray-200 rounded-xl p-6 hover:shadow-lg transition-all duration-300 group"
+                onClick={() => {
+                  if (pub.link && pub.link !== '#') {
+                    window.open(pub.link, '_blank', 'noopener');
+                  }
+                }}
+                role="button"
+                tabIndex={0}
+                onKeyDown={(e) => {
+                  if ((e.key === 'Enter' || e.key === ' ') && pub.link && pub.link !== '#') {
+                    e.preventDefault();
+                    window.open(pub.link, '_blank', 'noopener');
+                  }
+                }}
+                className="bg-white border border-gray-200 rounded-xl p-6 hover:shadow-lg transition-all duration-300 group cursor-pointer"
               >
                 <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-4">
                   <div className="flex-1">
@@ -249,9 +263,15 @@ export function ResearchSection() {
                         <div className="text-lg font-bold text-gray-900">{pub.citations}</div>
                         <div className="text-xs text-gray-500">{t('research.citations')}</div>
                       </div>
-                      <button className="p-2 text-gray-400 hover:text-blue-600 transition-colors duration-200">
+                      <a
+                        href={pub.link}
+                        target={pub.link && pub.link.startsWith('http') ? '_blank' : undefined}
+                        rel={pub.link && pub.link.startsWith('http') ? 'noopener noreferrer' : undefined}
+                        className="p-2 text-gray-400 hover:text-blue-600 transition-colors duration-200"
+                        aria-label="Open publication link"
+                      >
                         <ExternalLink className="h-4 w-4" />
-                      </button>
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -328,7 +348,7 @@ export function ResearchSection() {
               <div className="text-blue-100">{t('research.publications')}</div>
             </div>
             <div>
-              <div className="text-3xl font-bold mb-2">{patents.length}</div>
+              <div className="text-3xl font-bold mb-2">{patents.length}+</div>
               <div className="text-blue-100">{t('research.patents')}</div>
             </div>
             <div>

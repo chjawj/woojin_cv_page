@@ -6,7 +6,7 @@ const projects = [
   {
     title: '덱슐린',
     category: '디지털 치료제',
-    description: '비만 환자용 AI 기반 디지털 치료 솔루션.CGM 데이터와 사용자 입력을 활용해 운동·약물·식이 중재를 통합 제공, 실시간 모니터링 및 맞춤형 피드백 지원.',
+    description: '비만 환자용 AI 기반 디지털 치료 솔루션.CGM 데이터와 사용자 입력을 활용해 운동·약물·식이 중재 통합 제공.',
     tech: ['Computer Vision', 'Android', 'IoT', 'Python'],
     role: 'CTO & 기술 총괄',
     timeline: '2024 - 현재',
@@ -25,7 +25,7 @@ const projects = [
   },
   {
     title: 'alamo_c1',
-    category: '인공와우 체내 이식형 Full-custom SoC',
+    category: 'Full-custom ASIC',
     description: '인공와우 내부 임플란트용 Mixed system on chip. 무선 입력 데이터 복원에 따른 멀티채널 stimulation 및 recording 기능이 포함된 SoC 설계.',
     tech: ['ASIC Design', 'Analog Circuit', 'RF Communication', 'FPGA'],
     role: '수석 설계 엔지니어',

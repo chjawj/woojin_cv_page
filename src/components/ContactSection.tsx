@@ -1,7 +1,8 @@
-import React from 'react';
+//import React from 'react';
 import { motion } from 'motion/react';
-import { Mail, Linkedin, Github, MapPin, Phone, Calendar, Send, MessageSquare } from 'lucide-react';
+import { Mail, Linkedin, Github, MapPin, BookOpen, Phone, Calendar, Send, MessageSquare } from 'lucide-react';
 import { Button } from './ui/button';
+import { useLanguage } from '../contexts/LanguageContext';
 
 const contactMethods = [
   {
@@ -19,6 +20,14 @@ const contactMethods = [
     href: 'https://www.linkedin.com/in/woojin-ahn-20a020b2/',
     description: '전문적인 네트워킹',
     color: 'from-blue-600 to-blue-800'
+  },
+  {
+    icon: BookOpen,
+    label: 'contact.blog.label',
+    value: 'Blog',
+    href: 'https://possible-piccolo-8f0.notion.site/daily-global-news-26dd82ed51f98080b1dfcd3260e15e80?source=copy_link',
+    descKey: 'contact.blog.desc',
+    color: 'from-purple-500 to-indigo-600'
   },
   {
     icon: Phone,
